@@ -174,7 +174,7 @@ const Text4 = styled(Box)(({ theme }) => ({
 }));
 
 const Icons = styled(Box)(({ theme }) => ({
-	paddingTop: '20px',
+	paddingTop: '15px',
 	transition: '0.5s ease',
 	cursor: 'pointer',
 }));
@@ -189,7 +189,7 @@ const IconBox = styled(Box)(({ theme }) => ({
 	backgroundColor: '#ffffff',
 	transition: '0.3s ease',
 	'&:hover': {
-		backgroundColor: '#e4e4e4',
+		backgroundColor: '#d3d3d3',
 	},
 	[theme.breakpoints.down('md')]: {
 		width: '50px',
@@ -232,7 +232,7 @@ const FooterText = styled(Box)(({ theme }) => ({
 	justifyContent: 'center',
 	fontSize: '14px',
 	padding: '20px',
-	color: '#e4e4e4',
+	color: '#f0f0f0',
 	[theme.breakpoints.down('sm')]: {
 		fontSize: '12px',
 	},
