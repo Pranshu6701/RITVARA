@@ -220,9 +220,9 @@ const Footer = styled(Box)(({ theme }) => ({
 	alignItems: 'center',
 	justifyContent: 'center',
 	width: '100%',
-	paddingTop: '50px',
+	paddingTop: '20px',
 	[theme.breakpoints.down('sm')]: {
-		paddingTop: '30px',
+		paddingTop: '20px',
 	},
 }));
 
