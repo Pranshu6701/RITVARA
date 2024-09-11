@@ -6,6 +6,7 @@
 body{
   background: linear-gradient(180deg, #02043C 0%, #03055B 100%);
   font-family: 'Ubuntu', sans-serif;
+  /* height: 100vh; */
 }
 
 body,html{

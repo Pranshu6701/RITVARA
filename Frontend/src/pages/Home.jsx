@@ -17,22 +17,23 @@ const BackgroundContainer = styled(Box)(({ theme }) => ({
 }));
 
 const Component = styled(Box)(({ theme }) => ({
-	position: 'relative',
-	padding: '40px 20px',
 	display: 'flex',
 	alignItems: 'center',
+	justifyContent: 'space-between',
 	flexDirection: 'column',
-	justifyContent: 'center',
+	padding: '40px 20px 0 20px',
 	[theme.breakpoints.down('sm')]: {
-		padding: '40px 10px',
+		padding: '40px 10px 0px 10px',
 	},
 }));
 
 const Wrapper = styled(Box)`
+	/* flex: 1; // Expands the content area to push footer down */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
 	text-align: center;
 `;
 
@@ -110,8 +111,8 @@ const Text1 = styled(Box)(({ theme }) => ({
 	fontWeight: 500,
 
 	[theme.breakpoints.down('sm')]: {
-		fontSize: '1.2rem',
-		letterSpacing: '2px',
+		fontSize: '1.05rem',
+		letterSpacing: '3px',
 	},
 }));
 
@@ -148,7 +149,7 @@ const Text3 = styled(Box)(({ theme }) => ({
 		fontSize: '1.6rem',
 	},
 	[theme.breakpoints.down('sm')]: {
-		fontSize: '1.3rem',
+		fontSize: '1.2rem',
 		maxWidth: '100%',
 		paddingTop: '20px',
 	},
@@ -176,7 +177,6 @@ const Icons = styled(Box)(({ theme }) => ({
 	paddingTop: '20px',
 	transition: '0.5s ease',
 	cursor: 'pointer',
-	
 }));
 
 const IconBox = styled(Box)(({ theme }) => ({
@@ -188,8 +188,8 @@ const IconBox = styled(Box)(({ theme }) => ({
 	borderRadius: '50px',
 	backgroundColor: '#ffffff',
 	transition: '0.3s ease',
-	"&:hover":{
-		backgroundColor:"#e4e4e4"
+	'&:hover': {
+		backgroundColor: '#e4e4e4',
 	},
 	[theme.breakpoints.down('md')]: {
 		width: '50px',
@@ -202,7 +202,7 @@ const IconBox = styled(Box)(({ theme }) => ({
 }));
 
 const SocialLogo = styled('img')(({ theme }) => ({
-  display: 'flex',
+	display: 'flex',
 	alignItems: 'center',
 	justifyContent: 'center',
 	width: '40px',
@@ -216,16 +216,22 @@ const SocialLogo = styled('img')(({ theme }) => ({
 }));
 
 const Footer = styled(Box)(({ theme }) => ({
+	display: 'flex',
+	alignItems: 'center',
+	justifyContent: 'center',
 	width: '100%',
-	paddingTop: '60px',
-	textAlign: 'center',
+	paddingTop: '50px',
 	[theme.breakpoints.down('sm')]: {
 		paddingTop: '30px',
 	},
 }));
 
 const FooterText = styled(Box)(({ theme }) => ({
+	display: 'flex',
+	alignItems: 'center',
+	justifyContent: 'center',
 	fontSize: '14px',
+	padding: '20px',
 	color: '#e4e4e4',
 	[theme.breakpoints.down('sm')]: {
 		fontSize: '12px',
