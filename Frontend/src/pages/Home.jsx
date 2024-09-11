@@ -111,7 +111,7 @@ const Text1 = styled(Box)(({ theme }) => ({
 
 	[theme.breakpoints.down('sm')]: {
 		fontSize: '1.2rem',
-		letterSpacing: '3px',
+		letterSpacing: '2px',
 	},
 }));
 
@@ -130,8 +130,8 @@ const Text2 = styled(Box)(({ theme }) => ({
 		width: '100%',
 	},
 	[theme.breakpoints.down('sm')]: {
-		width: '95%',
-		fontSize: '0.9rem',
+		width: '100%',
+		fontSize: '0.92rem',
 		paddingTop: '30px',
 	},
 }));
@@ -148,7 +148,7 @@ const Text3 = styled(Box)(({ theme }) => ({
 		fontSize: '1.6rem',
 	},
 	[theme.breakpoints.down('sm')]: {
-		fontSize: '1.5rem',
+		fontSize: '1.3rem',
 		maxWidth: '100%',
 		paddingTop: '20px',
 	},
@@ -166,8 +166,8 @@ const Text4 = styled(Box)(({ theme }) => ({
 		maxWidth: '90%',
 	},
 	[theme.breakpoints.down('sm')]: {
-		fontSize: '0.9rem',
-		maxWidth: '92%',
+		fontSize: '0.92rem',
+		maxWidth: '100%',
 		paddingTop: '20px',
 	},
 }));
@@ -220,7 +220,7 @@ const Footer = styled(Box)(({ theme }) => ({
 	paddingTop: '60px',
 	textAlign: 'center',
 	[theme.breakpoints.down('sm')]: {
-		paddingTop: '70px',
+		paddingTop: '30px',
 	},
 }));
 
